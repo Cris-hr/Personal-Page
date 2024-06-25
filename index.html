@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/reset.css" />
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <title>Mi pagina web</title>
+  </head>
+  <body>
+    <h1>Proyecto M1</h1>
+    <header>
+      <nav>
+        <ul class="lista">
+          <li>
+            <a href="#contenedorSobreMi" class="anclaNav"> Sobre mí </a>
+          </li>
+          <li>
+            <a href="#contenedorTecnologias" class="anclaNav">
+              Tecnologías Favoritas
+            </a>
+          </li>
+          <li>
+            <a href="#actFavorita" class="anclaNav"> Actividades Favoritas </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="contenedorSobreMi">
+        <article>
+          <div class="contenedorArticuloSobreMi">
+            <pre id="tituloCris">
+SOBRE MÍ
+<span>CRISELDA HUAYRA</span></pre>
+            <p id="parrafoSobreMi">
+              Mi nombre es Criselda pero mis amigos y familiares me dicen Cris,
+              soy Contadora de profesion y actualmente estudiante de la academia
+              Henry en Desarrollo Web "FullStack", me gusta la danza, la música
+              y la poesía. Me siento lista para enfrentar nuevos desafíos y
+              hacer una diferencia en el campo empresarial.
+            </p>
+          </div>
+
+          <div id="contenedorImageCris">
+            <img
+              src="./assets/images/Cris-hr.png"
+              alt="foto de cris"
+              id="cris"
+            />
+          </div>
+        </article>
+      </section>
+
+      <hr />
+      <section id="contenedorTecnologias">
+        <article>
+          <h2>Mis Tecnologias Favoritas</h2>
+
+          <div class="containerCards">
+            <ul class="lista">
+              <li><img src="./assets/images/html.svg" alt="html" /></li>
+              <li><img src="./assets/images/css3.svg" alt="css " /></li>
+              <li>
+                <img src="./assets/images/javascript.svg" alt="javascript" />
+              </li>
+            </ul>
+          </div>
+        </article>
+      </section>
+
+      <hr />
+      <section id="actFavorita">
+        <article>
+          <h2>Mis Actividades Favoritas</h2>
+        </article>
+        <form id="formInfo">
+          <fieldset>
+            <legend>Crea tu actividad favorita</legend>
+            <label for="titulo">Titulo: </label>
+            <input type="text" id="titulo" placeholder="Crea un titulo..." />
+
+            <br />
+            <label for="descripcion">Descripcion: </label>
+            <br />
+            <textarea
+              id="descripcion"
+              placeholder="Describe tu actividad"
+              cols="30"
+              rows="5"
+            ></textarea>
+
+            <br />
+            <label for="images">Imagen: </label>
+            <input type="link" id="imgs" placeholder="URL de la imagen" />
+
+            <br />
+            <button id="button">Crear Actividad</button>
+          </fieldset>
+        </form>
+        <div class="containerCards" id="contentCards"></div>
+      </section>
+    </main>
+    <footer></footer>
+    <script src="./scripts/models.js"></script>
+    <script src="./scripts/index.js"></script>
+  </body>
+</html>
